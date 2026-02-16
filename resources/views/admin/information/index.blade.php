@@ -1,4 +1,4 @@
-<x-layouts.site>
+<x-layouts.site_admin>
   <!--Hero-->
   <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
@@ -44,7 +44,7 @@
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
             @foreach ( $informations as $information )  
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <a href="{{ route('information.show', $information->id) }}" class="block hover:opacity-80 transition">
+              <a href="{{ route('admin.information.show', $information->id) }}" class="block hover:opacity-80 transition">
                 <div class="rounded-lg h-64 overflow-hidden">
                   @if ($information->image)
                   <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('storage/information/' . $information->image) }}">
@@ -55,12 +55,15 @@
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">{{ $information->posted_at->format('Y.m.d') }}</h2>
                 <p class="text-gray-500 text-base leading-relaxed mt-2">{{ $information->title }}</p>
               </a>
-              {{-- <a href="{{ route('information.edit', $information->id) }}" class="text-gray-500">編集</a>
-              <form method="POST" action="{{ route('information.destroy', $information->id) }}">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="text-red-500" onclick="return confirm('本当に削除しますか？')">削除</button>
-              </form> --}}
+              
+              <div class="p-2 w-full flex justify-around mt-4">
+                <a href="{{ route('admin.information.edit', $information->id) }}" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">編集</a>
+                <form method="POST" action="{{ route('admin.information.destroy', $information->id) }}">
+                  @csrf
+                  @method('DELETE')
+                  <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="return confirm('本当に削除しますか？')">削除</button>
+                </form>
+              </div>
             </div>
             @endforeach
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -98,4 +101,4 @@
     {{ $informations->links() }}
 </div>
 
-</x-layouts.site>
+</x-layouts.site_admin>

@@ -21,19 +21,19 @@ class HomeController extends Controller
         return view('oem');
     }
 
-    public function information()
-    {
-        return view('information');
-    }
+    // public function information()
+    // {
+    //     return view('information');
+    // }
 
     public function privacy()
     {
         return view('privacy');
     }
     
-    public function contact()
-    {
-        return view('contact');
-    }   
+    // public function contact()
+    // {
+    //     return view('contact');
+    // }   
 
 }

@@ -1,5 +1,41 @@
 <x-layouts.site>
+
   <!--Hero-->
+  <div class="pt-24">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/oem_image.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/oem_image.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  {{-- <!--Hero-->
   <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
@@ -10,7 +46,6 @@
         <h1 class="mx-auto my-4 text-3xl text-gray-500 font-bold leading-tight">
           よろこびを届ける
         </h1>
-        {{-- <img src="/images/philo.png" alt="OEM Image" /> --}}
         <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">私たちは、人とのつながりを</p>
         <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">大切にしながら、学びと挑戦を重ね、</p>
         <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">関わるすべての人とともに成長します。</p>
@@ -19,10 +54,10 @@
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-full md:w-4/5 z-50" src="/images/oem_image.jpg" alt="OEM Image" />
+        <img class="w-full md:w-4/5 z-50" src="/images/lplogo.png" alt="lplogo" />
       </div>
     </div>
-  </div>
+  </div> --}}
 
   <div class="relative -mt-12 lg:-mt-24">
     <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

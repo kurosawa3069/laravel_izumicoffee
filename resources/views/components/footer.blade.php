@@ -29,9 +29,12 @@
         </a>
         <p class="mt-2 text-sm text-gray-500 text-center">伊豆味珈琲農園</p>
         <p class="mt-2 text-sm text-gray-500">オリジナルドリップパックコーヒーの企画・製造・販売・卸売り・OEM</p>
-        <div class="mt-4">
+        {{-- <div class="mt-4">
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a class="text-gray-500">
+          <a class="text-gray-500"> --}}
+        <div class="mt-4 flex justify-center">
+          <span class="inline-flex gap-3">
+            <a class="text-gray-500">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
@@ -99,7 +102,7 @@
           <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">プライバシーポリシー</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          © 2026 Izumi Coffee Farm All rights reserved.
+          © {{ date('Y') }} Izumi Coffee Farm All rights reserved.
         </span>
       </div>
     </div>

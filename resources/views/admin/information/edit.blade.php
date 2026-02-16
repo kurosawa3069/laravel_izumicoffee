@@ -1,4 +1,4 @@
-<x-layouts.site>
+<x-layouts.site_admin>
   <!--Hero-->
   <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
@@ -31,10 +31,10 @@
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-          Information Create
+          Information Edit
         </h3>
         <h3 class="text-1xl text-gray-800 font-bold leading-none mb-3">
-          お知らせの登録画面
+          お知らせの編集画面
         </h3>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">※は入力必須項目です</p>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">画像は3MB以内、形式は.jpg.jpeg.pngのみ</p>
@@ -48,28 +48,41 @@
           </ul>
       </div>
       @endif
-      <form method="post" action="{{ route('information.store') }}" enctype="multipart/form-data">
+      {{-- <form method="post" action="{{ route('information.store') }}" enctype="multipart/form-data"> --}}
+      <form method="POST" action="{{ route('admin.information.update', $information->id) }}" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-full">
               <div class="relative">
                 <label for="posted_at" class="leading-7 text-sm text-gray-600">日付 ※</label>
-                <input type="date" id="posted_at" name="posted_at" value="{{ old('posted_at') }}" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input type="date" id="posted_at" name="posted_at" value="{{ old('posted_at', $information->posted_at->format('Y-m-d')) }}" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>
             </div>
             <div class="p-2 w-full">
               <div class="relative">
                 <label for="title" class="leading-7 text-sm text-gray-600">タイトル ※</label>
-                <input type="text" id="title" name="title" value="{{ old('name') }}" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input type="text" id="title" name="title" value="{{ old('title', $information->title) }}" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>
             </div>
             <div class="p-2 w-full">
               <div class="relative">
                 <label for="description" class="leading-7 text-sm text-gray-600">内容 ※</label>
-                <textarea id="description" name="description" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                <textarea id="description" name="description" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out">{{ old('description', $information->description) }}</textarea>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6 mx-auto">
+              <div class="rounded-lg h-64 overflow-hidden">
+                @if ($information->image)
+                <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('storage/information/' . $information->image) }}">
+                @else
+                <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('images/noimage.png') }}" alt="no_image">
+                @endif
+              </div>
           </div>
         </div>
         <div class="p-4 md:w-1/3 sm:mb-0 mb-6 m-auto">
@@ -77,9 +90,9 @@
         </div>
         <div class="p-2 w-full flex justify-around mt-4">
           {{-- <button type="button" onclick="location.href='{{ route('information.index')}}'" class="bg-gray-200 border-0 py-2 px-8 focus:outline-none hover:bg-gray-400 rounded text-lg">戻る</button> --}}
-          <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">登録する</button>                        
+          <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">更新する</button>                        
         </div>
       </form>
     </div>
   </section>
-</x-layouts.site>
+</x-layouts.site_admin>

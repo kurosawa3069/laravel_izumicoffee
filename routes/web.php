@@ -4,6 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InformationController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\AdminInformationController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\AdminContactController;
 
 
 // Route::get('/', function () {
@@ -18,15 +22,37 @@ Route::get('/', function () {
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/company', [HomeController::class, 'company'])->name('company');
 Route::get('/oem', [HomeController::class, 'oem'])->name('oem');
-Route::get('/information', [HomeController::class, 'information'])->name('information');
+// Route::get('/information', [HomeController::class, 'information'])->name('information');
 Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
-Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+// Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
+
+// お知らせ公開側
 Route::get('/information', [InformationController::class, 'index'])->name('information.index');
-Route::get('/information/create', [InformationController::class, 'create'])->name('information.create');
-Route::post('/information', [InformationController::class, 'store'])->name('information.store');
 Route::get('/information/{id}', [InformationController::class, 'show'])->name('information.show');
-Route::get('/information/{id}/edit', [InformationController::class, 'edit'])->name('information.edit');
+
+// お知らせ管理側
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/information', [AdminInformationController::class, 'index'])->name('information.index');
+    Route::get('/information/create', [AdminInformationController::class, 'create'])->name('information.create');
+    Route::post('/information', [AdminInformationController::class, 'store'])->name('information.store');
+    Route::get('/information/{information}', [AdminInformationController::class, 'show'])->name('information.show');
+    Route::get('/information/{information}/edit', [AdminInformationController::class, 'edit'])->name('information.edit');
+    Route::put('/information/{information}', [AdminInformationController::class, 'update'])->name('information.update');
+    Route::delete('/information/{information}', [AdminInformationController::class, 'destroy'])->name('information.destroy');
+});
+
+// お問い合わせ公開側
+Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');;
+Route::post('/contact/confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
+Route::post('/contact/complete', [ContactController::class, 'store'])->name('contact.complete');
+
+// お問い合わせ管理側
+Route::middleware('auth')->prefix('admin')->group(function () {
+    Route::get('/contact', [AdminContactController::class, 'index'])->name('contact.index');
+    Route::get('/contact/{id}', [AdminContactController::class, 'show'])->name('contact.show');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -37,9 +63,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-
-
 
 
 require __DIR__.'/auth.php';
