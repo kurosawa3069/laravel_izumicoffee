@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,8 +46,8 @@
           header.classList.add("bg-white");
           navaction.classList.remove("bg-white");
           navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
+          // navaction.classList.remove("text-gray-800");
+          // navaction.classList.add("text-white");
           //Use to switch toggleColour colours
           for (var i = 0; i < toToggle.length; i++) {
             toToggle[i].classList.add("text-gray-800");
@@ -61,8 +60,8 @@
           header.classList.remove("bg-white");
           navaction.classList.remove("gradient");
           navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
+          // navaction.classList.remove("text-white");
+          // navaction.classList.add("text-gray-800");
           //Use to switch toggleColour colours
           for (var i = 0; i < toToggle.length; i++) {
             toToggle[i].classList.add("text-white");

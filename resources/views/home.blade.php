@@ -1,31 +1,73 @@
 <x-layouts.site>
-
   <!--Hero-->
   <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <div class="flex flex-col text-center w-full mt-24 mb-8">
+        {{-- <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">コーヒー豆専門店</h1> --}}
+        <img src="/images/lplogo2.png" alt="コーヒー豆専門店" class="mx-auto mb-4 sm:w-64 w-48">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">毎日の一杯から特別な一杯まで、幅広い種類のコーヒー豆を気軽に選べるよう取り揃えています。</p>
+      </div>
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="container px-5 pb-24 mx-auto flex flex-wrap">
           <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+            <!--左左-->
+            <div class="flex flex-wrap w-1/4">
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home4.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
               </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home11.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
               </div>
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/oem_image.jpg">
+              <div class="w-full relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home12.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
               </div>
             </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/oem_image.jpg">
+            <!--左右-->
+            <div class="flex flex-wrap w-1/4">
+              <div class="w-full relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home1.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
               </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home5.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
               </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/oem_image.jpg">
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home13.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+              </div>
+            </div>
+            <!--右左-->
+            <div class="flex flex-wrap w-1/4">
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home22.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+              </div>
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home21.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+              </div>
+              <div class="w-full relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home23.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+              </div>
+            </div>
+            <!--右右-->
+            <div class="flex flex-wrap w-1/4">
+              <div class="w-full relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home24.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+              </div>
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home25.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+              </div>
+              <div class="w-1/2 relative">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/home26.jpg">
+                <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
               </div>
             </div>
           </div>
@@ -33,31 +75,6 @@
       </section>
     </div>
   </div>
-
-
-  {{-- <!--Hero-->
-  <div class="pt-24">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-        <h1 class="mx-auto -4 text-3xl font-bold text-gray-500 leading-tight">
-          新たな価値と
-        </h1>
-        <h1 class="mx-auto my-4 text-3xl text-gray-500 font-bold leading-tight">
-          よろこびを届ける
-        </h1>
-        <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">私たちは、人とのつながりを</p>
-        <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">大切にしながら、学びと挑戦を重ね、</p>
-        <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">関わるすべての人とともに成長します。</p>
-        <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">社会や地域に信頼される存在として、</p>
-        <p class="leading-normal mx-auto text-1xl text-gray-500 font-bold mb-2">健全で持続的な経営を行っていきます。</p>
-      </div>
-      <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-full md:w-4/5 z-50" src="/images/lplogo.png" alt="lplogo" />
-      </div>
-    </div>
-  </div> --}}
 
   <div class="relative -mt-12 lg:-mt-24">
     <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -83,30 +100,30 @@
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Original Drip Pack Coffee
+              Store
           </h3>
           <h3 class="text-1xl text-gray-800 font-bold leading-none mb-3">
-              オリジナルドリップパックコーヒー
+              店舗のご案内
           </h3>
           <p class="text-gray-600 mb-8">
-            沖縄の魅力をぎゅっと詰め込んだ、オリジナルのドリップパックコーヒー。
-            沖縄の観光地や風景、文化や歴史をパッケージデザインで表現しています。
-            旅の思い出を振り返りながら、自分へのご褒美として。
-            また、大切な人へのお土産としても、気軽に手に取っていただける商品です。
+            当店は、日常的に楽しめるコーヒーからスペシャルティコーヒーまで、幅広いコーヒー豆を取り揃えた専門店です。</br></br>
+            100gなどの小ロットからご購入いただけるほか、1杯分のドリップバッグもご用意しており、気軽にさまざまな味わいをお試しいただけます。</br></br>
+            店内は初めての方でも入りやすい雰囲気づくりを心がけており、用途や好みに応じたコーヒー選びをサポートいたします。</br></br>
+            ご注文後に焙煎することも可能で、新鮮な状態でお届けし、日常の一杯から特別な一杯までお楽しみいただけます。
             <br />
             <br />
-              <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              {{-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   詳しくみる
-              </button>
+              </button> --}}
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img class="w-full md:w-4/5 z-50" src="/images/oem_image.jpg" alt="OEM Image" />
+          <img class="w-full md:w-4/5 z-50" src="/images/lplogo.png" alt="lplogo" />
         </div>
       </div>
-      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+      {{-- <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img class="w-full md:w-4/5 z-50" src="/images/oem_image.jpg" alt="OEM Image" />
+          <img class="w-full md:w-4/5 z-50 rounded-lg shadow-lg" src="/images/oem.jpg" alt="oem" />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -128,6 +145,56 @@
                   詳しくみる
               </button>
             </p>
+          </div>
+        </div> --}}
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py8 mx-auto">
+          <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+            <table class="table-auto w-full text-left whitespace-no-wrap">
+              <tbody>
+                <tr>
+                  <td class="px-4 py-3">住所</td>
+                  <td class="px-4 py-3">沖縄県名護市〇〇</td>
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">TEL</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">〇〇‐〇〇‐〇〇</td>
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">メール</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">〇〇@gmail.com</td>
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">営業時間</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">11:00～19:00</td>
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">定休日</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">〇曜日</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 pt-12 pl-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Access Map
+          </h3>
+          <h3 class="text-1xl text-gray-800 font-bold leading-none mb-3">
+              地図
+          </h3>
+        </div>
+      </div>
+        <div class="w-full">
+          <div class="relative w-full" style="padding-top: 80%;">
+            <iframe
+              src="https://www.google.com/maps?q=26.5906389,127.9831111&output=embed"
+              class="absolute top-0 left-0 w-full h-full border-0"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>

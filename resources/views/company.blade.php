@@ -53,7 +53,7 @@
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/philosophy.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -107,14 +107,14 @@
                 </tr>
                 <tr>
                   <td class="border-t-2 border-gray-200 px-4 py-3">所在地</td>
-                  <td class="border-t-2 border-gray-200 px-4 py-3">沖縄県名護市〇〇</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">沖縄県名護市大中１丁目４−１</td>
                 </tr>
                   <tr>
-                  <td class="border-t-2 border-gray-200 px-4 py-3">TEL</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">電話</td>
                   <td class="border-t-2 border-gray-200 px-4 py-3">〇〇‐〇〇‐〇〇</td>
                 </tr>
                 <tr>
-                  <td class="border-t-2 border-gray-200 px-4 py-3">FAX</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">メール</td>
                   <td class="border-t-2 border-gray-200 px-4 py-3">〇〇‐〇〇‐〇〇</td>
                 </tr>
                 <tr>
@@ -129,6 +129,7 @@
           </div>
         </div>
       </section>
+
     </div>
   </section>
   <div class="border border-gray-100 "></div>
@@ -160,12 +161,12 @@
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/farm.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/community.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -213,12 +214,12 @@
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/environment.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/social.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -263,12 +264,12 @@
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/governance.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img src="/images/oem_image.jpg" alt="OEM Image" />
+          <img src="/images/vision.png" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">

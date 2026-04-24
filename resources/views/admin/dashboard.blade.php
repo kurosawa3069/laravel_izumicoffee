@@ -59,6 +59,52 @@
           </tbody>
         </table>
       </div>
+
+      <div class="lg:w-2/3 w-full mx-auto overflow-auto pt-8">
+        <div class="flex items-end gap-3 mb-4 px-4">
+          <span class="sm:text-2xl text-xl font-medium text-gray-900">オンラインショップ</span>
+          <span class="sm:text-lg text-base text-gray-500 tracking-widest">Online Shop</span>
+        </div>        
+        <table class="table-auto w-full text-left whitespace-no-wrap">
+          <tbody class="mt-4">
+            <tr>
+              <td class="border-t-2 px-4 py-3 rounded-tl rounded-bl">一覧表示</td>
+              <td class="border-t-2 px-4 py-3">(詳細・編集・削除)</td>
+              <td class="border-t-2 px-4 py-3"></td>
+              <td class="border-t-2 px-4 py-3 text-lg text-gray-900">
+                <a href="{{ route('admin.products.index') }}" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">一覧ページへ移動</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">新規作成</td>
+              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"></td>
+              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"></td>
+              <td class="border-t-2 border-b-2 px-4 py-3 text-lg text-gray-900">
+                <a href="{{ route('admin.products.create') }}" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">作成ページへ移動</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="lg:w-2/3 w-full mx-auto overflow-auto pt-8">
+        <div class="flex items-end gap-3 mb-4 px-4">
+          <span class="sm:text-2xl text-xl font-medium text-gray-900">注文</span>
+          <span class="sm:text-lg text-base text-gray-500 tracking-widest">orders</span>
+        </div>        
+        <table class="table-auto w-full text-left whitespace-no-wrap">
+          <tbody class="mt-4">
+            <tr>
+              <td class="border-t-2 px-4 py-3 rounded-tl rounded-bl">一覧表示</td>
+              <td class="border-t-2 px-4 py-3">　　　(詳細)　　　</td>
+              <td class="border-t-2 px-4 py-3"></td>
+              <td class="border-t-2 px-4 py-3 text-lg text-gray-900">
+                <a href="{{ route('admin.orders.index') }}" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">一覧ページへ移動</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 </x-layouts.site_admin>

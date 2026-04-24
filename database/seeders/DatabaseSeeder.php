@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             InformationTableSeeder::class,
+            ProductSeeder::class,
+
         ]);
 
         //テーブルが空 → 新規作成

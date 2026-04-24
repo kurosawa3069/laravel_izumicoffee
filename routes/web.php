@@ -8,6 +8,12 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\AdminInformationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\AdminContactController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\Admin\AdminProductController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\ProductListController;
 
 
 // Route::get('/', function () {
@@ -22,10 +28,7 @@ Route::get('/', function () {
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/company', [HomeController::class, 'company'])->name('company');
 Route::get('/oem', [HomeController::class, 'oem'])->name('oem');
-// Route::get('/information', [HomeController::class, 'information'])->name('information');
 Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
-// Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-
 
 // お知らせ公開側
 Route::get('/information', [InformationController::class, 'index'])->name('information.index');
@@ -53,6 +56,32 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/contact', [AdminContactController::class, 'index'])->name('contact.index');
     Route::get('/contact/{id}', [AdminContactController::class, 'show'])->name('contact.show');
 });
+
+// 商品一覧公開用
+Route::get('/product/list', [ProductListController::class, 'index'])->name('products.list');
+
+// オンラインショップ公開用
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
+Route::post('/cart/remove', [CartController::class, 'remove'])->name('cart.remove');
+Route::post('/cart/update', [CartController::class, 'update'])->name('cart.update');
+Route::get('/cart/confirm', [CartController::class, 'confirm'])->name('cart.confirm');
+
+// オンラインショップ管理用
+Route::prefix('admin')->name('admin.')->group(function () {
+        Route::resource('products', AdminProductController::class);
+});
+
+// 決済処理公開用
+Route::post('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
+Route::get('/checkout/complete', [CheckoutController::class, 'complete'])->name('checkout.complete');
+
+// 決済処理管理用
+Route::get('/admin/orders', [OrderController::class, 'index'])->name('admin.orders.index');
+Route::get('/admin/orders/{order}', [OrderController::class, 'show'])->name('admin.orders.show');
+Route::post('/admin/orders/{order}/status', [OrderController::class, 'updateStatus'])->name('admin.orders.status');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

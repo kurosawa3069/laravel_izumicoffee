@@ -12,7 +12,7 @@ class InformationTableSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-public function run(): void
+    public function run(): void
     {
         $image_types = [
             'food', 'recipe', 'cooking', 'dinner',

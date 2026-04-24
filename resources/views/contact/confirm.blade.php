@@ -92,9 +92,7 @@
             {{-- 内容 --}}
             <div class="p-2 w-full">
               <p class="text-sm mb-1">お問い合わせ内容</p>
-              <div class="bg-gray-100 border rounded px-3 py-3 whitespace-pre-wrap">
-                {{ $inputs['message'] }}
-              </div>
+              <div class="bg-gray-100 border rounded px-3 py-3 whitespace-pre-wrap">{{ trim($inputs['message']) }}</div>
               <input type="hidden" name="message" value="{{ e($inputs['message']) }}">
             </div>
 

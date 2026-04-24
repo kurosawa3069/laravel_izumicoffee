@@ -36,46 +36,66 @@
         プライバシーポリシー（個人情報保護方針）
       </h3>
       <p class="w-full mb-8 leading-relaxed text-gray-800 pl-8 pr-8">
-      株式会社〇〇（以下「当社」）は、個人情報の重要性を認識し、適切な保護を行うことを社会的責務と考え、以下のとおり個人情報の保護に関する方針を定め、これを実行・維持してまいります。
+      なごまちコーヒー焙煎所（以下「当店」）は、お客様の個人情報の重要性を認識し、その適切な保護を社会的責務と考え、以下のとおり個人情報保護方針を定め、これを実施・維持いたします。
       </p>
 
         <div class="flex flex-wrap w-full mb-20 flex-col items-left text-left  pl-8 pr-8">
           <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の管理</h1>
           <p class="w-full mb-8 leading-relaxed text-gray-800">
-          当社は、取得した個人情報について、正確かつ最新の内容を保つよう努めるとともに、不正アクセス、紛失、破壊、改ざん、漏えい等を防止するため、組織的・技術的な安全管理措置を講じ、適切に管理いたします。
+          当店は、お客様の個人情報を正確かつ最新の状態に保つよう努めるとともに、不正アクセス・紛失・破損・改ざん・漏えい等を防止するため、適切な安全対策を講じ、厳重に管理いたします。
           </p>
-          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の取得について</h1>
+          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の取得方法</h1>
           <p class="w-full mb-8 leading-relaxed text-gray-800">
-          当社は、お問い合わせフォームへの入力、電子メール、電話等を通じて、業務遂行に必要な範囲で個人情報を取得いたします。取得にあたっては、適正かつ公正な手段により行います。
+          当店は、以下の方法により個人情報を取得いたします。<br />
+          ・お問い合わせフォームへのご入力<br />
+          ・会員登録フォームへのご入力<br />
+          ・LINE公式アカウントへの登録およびメッセージ送信<br />
+          ・電子メール、電話等によるお問い合わせ<br />
+          ・商品のご注文およびサービスのご利用<br />
+          取得にあたっては、適正かつ公正な手段により行います。
           </p>
           <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の利用目的</h1>
           <p class="w-full mb-8 leading-relaxed text-gray-800">
-          お客さまよりお預かりした個人情報は、以下の目的の範囲内で利用いたします。<br />
-          ・お問い合わせへの対応<br />
-          ・当社のサービスや業務に関するご案内<br />
-          ・資料の送付や必要なご連絡
+            ・お問い合わせへの対応<br />
+            ・ご注文内容の確認、商品発送および決済処理<br />
+            ・会員サービスの提供および管理<br />
+            ・LINE、メール等による商品情報、キャンペーン、サービスのご案内<br />
+            ・サービス向上のための分析および改善<br />
+            ・重要なお知らせ等、必要に応じたご連絡
+            ・上記に付随する目的のため  
           </p>
-          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の第三者提供について</h1>
+          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の第三者提供</h1>
           <p class="w-full mb-8 leading-relaxed text-gray-800">
-          当社は、取得した個人情報を適切に管理し、次の場合を除き、第三者に開示または提供することはありません。<br />
-          ・ご本人の同意がある場合<br />
-          ・業務の遂行に必要な範囲で、業務委託先に提供する場合<br />
-          ・法令に基づき開示が求められた場合<br />
-          なお、業務を委託する際には、委託先に対して個人情報の適切な取扱いを求め、必要な管理・監督を行います。
+            当店は、次の場合を除き、個人情報を第三者に開示または提供することはありません。<br />
+            ・お客様の同意がある場合<br />
+            ・商品配送や決済処理等、業務遂行に必要な範囲で業務委託先に提供する場合<br />
+            ・法令に基づき開示が必要な場合<br />
+            なお、業務委託先に対しては、個人情報の適切な管理を義務付け、必要な監督を行います。
           </p>
           <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">個人情報の開示・訂正・削除等</h1>
           <p class="w-full mb-8 leading-relaxed text-gray-800">
-          ご本人から、自己の個人情報について開示、訂正、追加、削除、利用停止等のご要望があった場合には、ご本人確認を行った上で、法令に基づき適切に対応いたします。
+          お客様ご本人から、自己の個人情報について開示・訂正・追加・削除・利用停止等のご要望があった場合には、ご本人確認のうえ、法令に基づき適切に対応いたします。
           </p>
-          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">法令等の遵守と見直し</h1>
+          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">アクセス解析およびCookieの利用について</h1>
           <p class="w-full mb-8 leading-relaxed text-gray-800">
-          当社は、個人情報の取扱いに関して適用される法令および関連する規範を遵守するとともに、本方針の内容について継続的な見直しと改善に努めます。
+          当店のウェブサイトでは、サービス向上および利用状況の分析のため、Cookieやアクセス解析ツールを利用する場合があります。<br />
+          これにより収集される情報は、個人を特定するものではありません。<br />
+          お客様は、ブラウザの設定によりCookieの受け取りを拒否することが可能です。
+          </p>
+          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">LINE公式アカウントの利用について</h1>
+          <p class="w-full mb-8 leading-relaxed text-gray-800">
+          当店は、LINE公式アカウントを通じて情報配信およびお問い合わせ対応を行う場合があります。<br />
+          LINEの利用にあたっては、LINEヤフー株式会社のプライバシーポリシーが適用されます。
+          </p>
+          <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">法令遵守および見直し</h1>
+          <p class="w-full mb-8 leading-relaxed text-gray-800">
+          当店は、個人情報に関する法令およびその他の規範を遵守するとともに、本ポリシーの内容を適宜見直し、継続的な改善に努めます。
           </p>
           <h1 class="sm:text-xl text-2xl font-medium title-font mb-2 text-gray-800">お問い合わせ窓口</h1>
           <p class="w-full leading-relaxed text-gray-800">
-          当社の個人情報の取扱いに関するお問い合わせは、当社ウェブサイト内のお問い合わせフォームよりご連絡ください。<br />
-          株式会社〇〇<br />
-          沖縄県〇〇
+          当社の個人情報の取扱いに関するお問い合わせは、当社ウェブサイト内の
+          <a href="{{ route('contact.create') }}" class="text-blue-600 underline hover:text-blue-800">お問い合わせフォーム</a>よりご連絡ください。<br />
+          なごまちコーヒー焙煎所
           </p>
         </div>
       </div>
