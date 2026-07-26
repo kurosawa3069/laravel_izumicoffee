@@ -219,16 +219,35 @@
             </h3>
           </div>
       </div>
-      <div class="container px-5 mx-auto">
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
-            {{-- <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <div class="container px-5 py-8 mx-auto">
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
+            @foreach ($informations as $information)
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <a href="{{ route('information.show', $information->id) }}" class="block hover:opacity-80 transition">
+                  <div class="rounded-lg h-64 overflow-hidden">
+                      @if ($information->image)
+                      <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('storage/information/' . $information->image) }}">
+                      @else
+                      <img alt="no_image" class="object-cover object-center h-full w-full" src="{{ asset('images/noimage.png') }}">
+                      @endif
+                  </div>
+                  <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                      {{ $information->posted_at->format('Y.m.d') }}
+                  </h2>
+                  <p class="text-gray-500 text-base leading-relaxed mt-2">
+                      {{ $information->title }}
+                  </p>
+              </a>
+          </div>
+          @endforeach
+          {{-- <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
                 </div>
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">2026.03.24</h2>
                 <p class="text-gray-500 text-base leading-relaxed mt-2">QAB「ビジネスキャッチー」でOKINAWAミント缶が特集されました</p>
-            </div> --}}
-            {{-- <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
                 </div>
@@ -242,11 +261,11 @@
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
                 <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
             </div> --}}
-          </div>
-        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out pt-8">
-            お知らせ一覧へ
-        </button>
+        </div>
       </div>
+    </div>
+    <div class="ml-12">
+          <a href="{{ route('information.index') }}" class="-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">お知らせ一覧へ</a>
     </div>
   </section>
 </x-layouts.site>

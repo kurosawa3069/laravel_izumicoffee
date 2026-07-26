@@ -41,61 +41,60 @@
           </div>
       </div>
       <div class="container px-5 mx-auto">
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
-            @foreach ( $informations as $information )  
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <a href="{{ route('information.show', $information->id) }}" class="block hover:opacity-80 transition">
-                <div class="rounded-lg h-64 overflow-hidden">
-                  @if ($information->image)
-                  <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('storage/information/' . $information->image) }}">
-                  @else
-                  <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('images/noimage.png') }}" alt="no_image">
-                  @endif
-                </div>
-                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">{{ $information->posted_at->format('Y.m.d') }}</h2>
-                <p class="text-gray-500 text-base leading-relaxed mt-2">{{ $information->title }}</p>
-              </a>
-              {{-- <a href="{{ route('information.edit', $information->id) }}" class="text-gray-500">編集</a>
-              <form method="POST" action="{{ route('information.destroy', $information->id) }}">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="text-red-500" onclick="return confirm('本当に削除しますか？')">削除</button>
-              </form> --}}
-            </div>
-            @endforeach
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
-                </div>
-                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">2026.01.22</h2>
-                <p class="text-gray-500 text-base leading-relaxed mt-2">沖縄高専祭に協賛させていただきました</p>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-                </div>
-                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-                <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-                </div>
-                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-                <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-                </div>
-                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-                <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-            </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
+          @foreach ( $informations as $information )  
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <a href="{{ route('information.show', $information->id) }}" class="block hover:opacity-80 transition">
+              <div class="rounded-lg h-64 overflow-hidden">
+                @if ($information->image)
+                <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('storage/information/' . $information->image) }}">
+                @else
+                <img alt="content" class="object-cover object-center h-full w-full" src="{{ asset('images/noimage.png') }}" alt="no_image">
+                @endif
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">{{ $information->posted_at->format('Y.m.d') }}</h2>
+              <p class="text-gray-500 text-base leading-relaxed mt-2">{{ $information->title }}</p>
+            </a>
+            {{-- <a href="{{ route('information.edit', $information->id) }}" class="text-gray-500">編集</a>
+            <form method="POST" action="{{ route('information.destroy', $information->id) }}">
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="text-red-500" onclick="return confirm('本当に削除しますか？')">削除</button>
+            </form> --}}
+          </div>
+          @endforeach
+          {{-- <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">2026.01.22</h2>
+              <p class="text-gray-500 text-base leading-relaxed mt-2">沖縄高専祭に協賛させていただきました</p>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+              <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+              <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          </div>
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+              <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          </div> --}}
       </div>
     </div>
-</section>
+  </section>
 <div class="bg-white flex justify-end pr-20 pb-12">
     {{ $informations->links() }}
 </div>
-
 </x-layouts.site>
