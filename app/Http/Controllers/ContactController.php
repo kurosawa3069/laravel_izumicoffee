@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class ContactController extends Controller
 {
@@ -55,7 +57,10 @@ class ContactController extends Controller
             'message'           => 'required|string|max:1000',
         ]);
 
-        Contact::create($validated);
+        $contact = Contact::create($validated);
+
+        Mail::to('nagomachicoffeeroaster@gmail.com')
+            ->send(new ContactMail($contact));
 
         return view('contact.complete');
     }

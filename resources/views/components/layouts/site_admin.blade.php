@@ -1,16 +1,34 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Tailwind Starter Template - Landing Page Template: Tailwind Toolbox
-    </title>
-    <meta name="description" content="Simple landind page" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <title>なごまちコーヒー焙煎所｜名護市の自家焙煎コーヒー豆専門店</title>
+    <meta name="description" content="沖縄県名護市の自家焙煎コーヒー豆専門店。ご注文ごとに焙煎する新鮮なコーヒー豆を100gから販売しています。日常使いのコーヒーからスペシャルティコーヒー、ドリップバッグまで幅広く取り揃えています。" />
+    <meta name="keywords" content="なごまちコーヒー焙煎所,名護市,沖縄,コーヒー豆,自家焙煎,スペシャルティコーヒー,珈琲,焙煎,ドリップバッグ,テイクアウト" />
+    <meta name="author" content="なごまちコーヒー焙煎所" />
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://nagomachicoffee.com/">
+
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="なごまちコーヒー焙煎所｜名護市の自家焙煎コーヒー豆専門店">
+    <meta property="og:description" content="ご注文ごとに焙煎する新鮮なコーヒー豆を100gから販売。日常使いからスペシャルティコーヒーまで取り揃えています。">
+    <meta property="og:url" content="https://nagomachicoffee.com/">
+    {{-- <meta property="og:image" content="https://nagomachicoffee.com/images/ogp.jpg"> --}}
+    <meta property="og:site_name" content="なごまちコーヒー焙煎所">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="なごまちコーヒー焙煎所">
+    <meta name="twitter:description" content="沖縄県名護市の自家焙煎コーヒー豆専門店">
+    {{-- <meta name="twitter:image" content="https://nagomachicoffee.com/images/ogp.jpg"> --}}
+
+    <link rel="icon" href="/favicon.ico">
+
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />

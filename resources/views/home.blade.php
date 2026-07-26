@@ -4,6 +4,13 @@
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col text-center w-full mt-24 mb-8">
         {{-- <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">コーヒー豆専門店</h1> --}}
+        <div>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">【お知らせ】</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">現在オープンに向けた準備を進めています。</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">8月初旬よりテイクアウトコーヒーの販売開始、8月下旬よりコーヒー豆の焙煎・販売開始を予定しております。</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">オープン日や営業に関する最新情報は、Instagramで随時更新いたします。</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">ぜひフォローして最新情報をご確認ください。</p>
+        </div>
         <img src="/images/lplogo2.png" alt="コーヒー豆専門店" class="mx-auto mb-4 sm:w-64 w-48">
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">毎日の一杯から特別な一杯まで、幅広い種類のコーヒー豆を気軽に選べるよう取り揃えています。</p>
       </div>
@@ -107,11 +114,9 @@
           </h3>
           <p class="text-gray-600 mb-8">
             当店は、日常的に楽しめるコーヒーからスペシャルティコーヒーまで、幅広いコーヒー豆を取り揃えた専門店です。</br></br>
-            100gなどの小ロットからご購入いただけるほか、1杯分のドリップバッグもご用意しており、気軽にさまざまな味わいをお試しいただけます。</br></br>
-            店内は初めての方でも入りやすい雰囲気づくりを心がけており、用途や好みに応じたコーヒー選びをサポートいたします。</br></br>
-            ご注文後に焙煎することも可能で、新鮮な状態でお届けし、日常の一杯から特別な一杯までお楽しみいただけます。
-            <br />
-            <br />
+            コーヒー豆は100gからお買い求めいただけるほか、1杯分のドリップバッグもご用意しており、気軽にさまざまな味わいをお楽しみいただけます。</br></br>
+            コーヒー豆はご注文をいただいてから焙煎するため、いつでも新鮮な状態でお持ち帰りいただけます。また、すぐにお持ち帰りいただける焙煎済みの豆も一部ご用意しております。</br></br>
+            店内は初めての方でも気軽にお立ち寄りいただける雰囲気づくりを心がけており、お客様の用途やお好みに合わせたコーヒー選びをお手伝いいたします。</br></br> 
               {{-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   詳しくみる
               </button> --}}
@@ -154,24 +159,24 @@
               <tbody>
                 <tr>
                   <td class="px-4 py-3">住所</td>
-                  <td class="px-4 py-3">沖縄県名護市〇〇</td>
+                  <td class="px-4 py-3">沖縄県名護市大中1丁目4-1</td>
                 </tr>
                 <tr>
                   <td class="border-t-2 border-gray-200 px-4 py-3">TEL</td>
-                  <td class="border-t-2 border-gray-200 px-4 py-3">〇〇‐〇〇‐〇〇</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">0980-43-5976</td>
                 </tr>
                 <tr>
                   <td class="border-t-2 border-gray-200 px-4 py-3">メール</td>
-                  <td class="border-t-2 border-gray-200 px-4 py-3">〇〇@gmail.com</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">nagomachicoffeeroaster@gmail.com</td>
                 </tr>
-                <tr>
+                {{-- <tr>
                   <td class="border-t-2 border-gray-200 px-4 py-3">営業時間</td>
                   <td class="border-t-2 border-gray-200 px-4 py-3">11:00～19:00</td>
                 </tr>
                 <tr>
                   <td class="border-t-2 border-gray-200 px-4 py-3">定休日</td>
-                  <td class="border-t-2 border-gray-200 px-4 py-3">〇曜日</td>
-                </tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">不定休</td>
+                </tr> --}}
               </tbody>
             </table>
           </div>
@@ -190,7 +195,7 @@
         <div class="w-full">
           <div class="relative w-full" style="padding-top: 80%;">
             <iframe
-              src="https://www.google.com/maps?q=26.5906389,127.9831111&output=embed"
+              src="https://www.google.com/maps?q=26.5906333,127.9831346&output=embed"
               class="absolute top-0 left-0 w-full h-full border-0"
               loading="lazy"
               allowfullscreen>
@@ -216,14 +221,14 @@
       </div>
       <div class="container px-5 mx-auto">
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pr-8 pl-8">
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            {{-- <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
                 </div>
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">2026.03.24</h2>
                 <p class="text-gray-500 text-base leading-relaxed mt-2">QAB「ビジネスキャッチー」でOKINAWAミント缶が特集されました</p>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            </div> --}}
+            {{-- <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
                 </div>
@@ -236,7 +241,7 @@
                 </div>
                 <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
                 <p class="text-gray-500 text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-            </div>
+            </div> --}}
           </div>
         <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out pt-8">
             お知らせ一覧へ
