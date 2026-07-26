@@ -47,7 +47,7 @@
       <h1 class="title-font sm:text-4xl text-3xl mb-16 font-medium text-gray-900">{{ $information->title }}</h1>
       <img class="lg:w-1/2 md:w-2/3 w-full mb-10 object-cover object-center rounded mx-auto" src="{{ asset('storage/information/' . $information->image) }}" alt="{{ $information->title }}">
       <div class="text-center lg:w-2/3 w-full">
-        <p class="mb-8 leading-relaxed">{{ $information->description }}</p>
+        <p class="mb-8 leading-relaxed">{!! nl2br(e($information->description)) !!}</p>
           <div class="p-2 w-full flex justify-around mt-4">
             <button type="button" onclick="location.href='{{ route('information.index')}}'" class="bg-gray-200 border-0 py-2 px-8 focus:outline-none hover:bg-gray-400 rounded text-lg">お知らせ一覧へ戻る</button>
           </div>
