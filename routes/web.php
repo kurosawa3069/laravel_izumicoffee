@@ -20,12 +20,14 @@ use App\Http\Controllers\ProductListController;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+// Route::get('/', function () {
+//     return view('home');
+// })->name('home');
 
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+// Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index']);
 Route::get('/company', [HomeController::class, 'company'])->name('company');
 Route::get('/oem', [HomeController::class, 'oem'])->name('oem');
 Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
