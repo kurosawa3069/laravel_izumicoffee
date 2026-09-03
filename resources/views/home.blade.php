@@ -4,13 +4,13 @@
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col text-center w-full mt-24 mb-8">
         {{-- <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">コーヒー豆専門店</h1> --}}
-        <div>
+        {{-- <div>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">【お知らせ】</p>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">現在オープンに向けた準備を進めています。</p>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">8月初旬よりテイクアウトコーヒーの販売開始、8月下旬よりコーヒー豆の焙煎・販売開始を予定しております。</p>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">オープン日や営業に関する最新情報は、Instagramで随時更新いたします。</p>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">ぜひフォローして最新情報をご確認ください。</p>
-        </div>
+        </div> --}}
         <img src="/images/lplogo2.png" alt="コーヒー豆専門店" class="mx-auto mb-4 sm:w-64 w-48">
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">毎日の一杯から特別な一杯まで、幅広い種類のコーヒー豆を気軽に選べるよう取り揃えています。</p>
       </div>
