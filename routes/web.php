@@ -32,6 +32,8 @@ Route::get('/company', [HomeController::class, 'company'])->name('company');
 Route::get('/oem', [HomeController::class, 'oem'])->name('oem');
 Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
 
+Route::get('items/sweetblend', [HomeController::class, 'sweetblend'])->name('items.sweetblend');
+
 // お知らせ公開側
 Route::get('/information', [InformationController::class, 'index'])->name('information.index');
 Route::get('/information/{id}', [InformationController::class, 'show'])->name('information.show');
@@ -60,7 +62,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 });
 
 // 商品一覧公開用
-Route::get('/product/list', [ProductListController::class, 'index'])->name('products.list');
+// Route::get('/product/list', [ProductListController::class, 'index'])->name('products.list');
 
 // オンラインショップ公開用
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');

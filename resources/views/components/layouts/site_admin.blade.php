@@ -27,7 +27,8 @@
     <meta name="twitter:description" content="沖縄県名護市の自家焙煎コーヒー豆専門店">
     {{-- <meta name="twitter:image" content="https://nagomachicoffee.com/images/ogp.jpg"> --}}
 
-    <link rel="icon" href="/favicon.ico">
+    {{-- <link rel="icon" href="/favicon.ico"> --}}
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->

@@ -21,6 +21,11 @@ class HomeController extends Controller
         return view('company');
     }
 
+    public function sweetblend()
+    {
+        return view('items.sweetblend');
+    }
+    
     public function oem()
     {
         return view('oem');

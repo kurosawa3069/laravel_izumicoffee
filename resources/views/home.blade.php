@@ -115,7 +115,7 @@
           <p class="text-gray-600 mb-8">
             当店は、日常的に楽しめるコーヒーからスペシャルティコーヒーまで、幅広いコーヒー豆を取り揃えた専門店です。</br></br>
             コーヒー豆は100gからお買い求めいただけるほか、1杯分のドリップバッグもご用意しており、気軽にさまざまな味わいをお楽しみいただけます。</br></br>
-            コーヒー豆はご注文をいただいてから焙煎するため、いつでも新鮮な状態でお持ち帰りいただけます。また、すぐにお持ち帰りいただける焙煎済みの豆も一部ご用意しております。</br></br>
+            コーヒー豆はご注文をいただいてから焙煎するため、いつでも新鮮な状態でお持ち帰りいただけます。</br></br>
             店内は初めての方でも気軽にお立ち寄りいただける雰囲気づくりを心がけており、お客様の用途やお好みに合わせたコーヒー選びをお手伝いいたします。</br></br> 
               {{-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   詳しくみる
