@@ -61,11 +61,11 @@
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img src="/images/sweetblend2.JPG" class="rounded-lg shadow-lg"alt="OEM Image" />
+          <img src="/images/sweetblend2.jpg" class="rounded-lg shadow-lg"alt="OEM Image" />
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img src="/images/sweetblend1.JPG" class="rounded-lg shadow-lg" alt="OEM Image" />
+          <img src="/images/sweetblend1.jpg" class="rounded-lg shadow-lg" alt="OEM Image" />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
